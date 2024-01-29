@@ -1,89 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body bgcolor="skyblue">
-    <!-- <table border="1" style="width: 1520px;height: 500px ;border-collapse: ;">
-        <tr style="background-color: chocolate; border: 0ch;">
-            <td><b><center>Logo</center></b></td>
-            <td colspan="4"><b><center>Web Site Name</center></b></td>
-        </tr>
-        <tr style="background-color: blanchedalmond;border: 0ch;">
-            <td><center><a href="Homepagepp.html">Home</a></center></td>
-            <td><center><a href="Loginpagepp.html">Login</a></center></td>
-            <td><center><a href="Registrationpp.html">Registration</a></center></td>
-            <td><center>Catalogue</center></td>
-            <td><center>Cart</center></td>
-        <tr style="border: 0ch;">
-             <td>CSE </td>
-             <td colspan="4" rowspan="4"><center><form> -->
-         <h4>Registration page</h4>
-            <div>
-             Name:<input type="text"><br>
-             <!-- <br> -->
-             Pasword:<input type="password"><br>
-             <!-- <br> -->
-             Email.:<input type="email"><br>
-             <!-- <br> -->
-             Phone: <input type="text"><br>
-             <!-- <br> -->
-             Sex: <input type="radio">Male      <input type="radio"> Female<br>
-             <!-- <br> -->
-             DOB: <input type="date"><br>
-             <!-- <br> -->
-             Languages known : 
-             <div>
-                               <input type="checkbox">English <br>
-                               
-                               <input type="checkbox">Hindi <br>
-                               
-                               <input type="checkbox">Telgu <br>
-                               
-                               <input type="checkbox">Tamil <br>
-             </div>
-             Addres : <input type="text">
-             
+<html>  
+    <body bgcolor="skyblue" >
+        <h1>Registration Page</h1>
+        <form name = "register" method = "GET" action = "x.php">
+        <table>
+            <tr>
+                <td><label for = "fname">First name</label></td>
+                <td><input placeholder = "Enter the first name"
+                     type = "text" id = "fname" 
+                     pattern="[A-Za-z]"/></td>
 
-
-
-
-
-
-            <!-- </div> -->
-
-                 
-        
-                
-             
-            <!-- </form>   </center></td>
-             <td>nn</td>
-             <td>mm</td>
-             <td>45</td>
-             <td>487</td> -->
-        <!-- </tr>
-        <tr style="border: 0ch;">
-             <td>ECE</td> -->
-             <!-- <td>nn</td>
-             <td>mm</td>
-             <td>45</td>
-             <td>487</td> -->
-        <!-- </tr>
-        <tr style="border: 0ch;">
-             <td>EEE </td>
-            
-        </tr>
-        <tr style="border: 0px;">
-            <td>CIVIL  </td> -->
-            <!-- <td>nn</td> 
-            <td>mm</td>
-            <td>45</td>
-            <td>487</td> -->
-       <!-- </tr>
-
-        
-    </table> -->
-</body>
-</html> 
+            </tr>
+            <tr>
+                <td><label>Last name</label></td>
+                <td><input type = "text" name = "lname" required /></td>
+            </tr>
+            <tr>
+                <td>Contact</td>
+                <td><input type = "text" name = "contact" required /></td>
+           </tr>
+           <tr>
+            <td>Email.</td>
+            <td><input type="email" name="email" required></td>
+           </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type = "password" name = "pword" required /></td>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <td><input type = "week" name = "dob" required /></td>
+            </tr>
+            <tr>
+                <td>Language Known</td>
+                <td>
+                    <input type = "checkbox" name = "qual"
+                     value = "English" />English<br />
+                    <input type = "checkbox" name = "qual"
+                     value = "Hindi" />Hindi<br />
+                    <input type = "checkbox" name = "qual"
+                     value = "Tamil" />Tamil<br />
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type = "radio" name = "gender"
+                     value = "Male" />Male<br />
+                    <input type = "radio" name = "gender"
+                     value = "Female" />Female<br />
+                </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                    <select name = "city" multiple>
+                        <option value = "">--</option>
+                        <option value = "knp">Kanpur</option>
+                        <option value = "lck">Lucknow</option>
+                        <option value = "bng" selected>Bangalore</option>
+                        <option value = "del">Delhi</option>
+                    </select>
+                </td>
+            </tr>
+            <!-- <tr>
+                <td>Experience</td>
+                <td>
+                    <input type = "number" name = "exp" />
+                </td>
+            </tr> -->
+            <tr>
+                <td colspan = "2" align = "right">
+                    <input type = "submit" value = "Submit" />
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
